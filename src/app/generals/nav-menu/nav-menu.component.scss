@@ -1,0 +1,88 @@
+nav {
+    display: grid;
+    grid-template-columns: 5% 20% 75%;
+
+    margin: -0.5rem;
+    background-color: rgb(85, 60, 120);
+
+
+    padding: 1rem;
+
+    $height: 2.5rem;
+
+    border-bottom: solid rgb(219, 219, 219) 0.1rem;
+
+    padding-left: 4rem;
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        img {
+            width: 50%;
+        }
+    }
+
+    .search {
+        $radius: 0.25rem;
+        display: grid;
+        //grid-template-columns: 15% 85%;
+
+        height: $height;
+
+        input {
+            border: none;
+            border-radius: $radius;
+
+            background: url(../../../assets/imgs/icons/search.png) no-repeat scroll 0.75rem 0.6rem;
+            background-size: 1.2rem;
+
+            background-color: white;
+            padding-left: 2.5rem;
+        }
+        input:focus {
+            outline: solid 0.2rem rgb(82, 82, 82);
+            width: 100%;
+            //-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+        }
+    }
+
+    .options:hover {
+        cursor: pointer;
+    }
+    
+    .options {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        text-align: right;
+
+        margin-left: 20rem;
+
+        height: $height - 2rem;
+
+        .option {
+            $font-size: 0.8rem;
+            text-align: center;
+
+            width: 4rem;
+            
+            img {
+                width: $height - $font-size;
+            }
+            p {
+                margin-top: 0;
+                color: white;
+                font-size: $font-size;
+            }
+        }
+
+        #me {
+            margin-top: -0.25rem;
+            img {
+                border-radius: 50%;
+            }
+        }
+
+    }
+}

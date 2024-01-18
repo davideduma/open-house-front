@@ -1,0 +1,107 @@
+button {
+    margin: 1.5rem;
+    margin-bottom: 0;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: transparent;
+    color: white;
+}
+
+.background {
+    margin: -0.5rem;
+    background-color: rgb(85, 60, 120);
+    padding-bottom: 1.5rem;
+}
+
+.register {
+    text-align: center;
+    color: white;
+    
+    .logo {
+        img {
+            width: 18%;
+        }
+    }
+
+    h1 {
+        margin: 0.5rem;
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+
+    form {
+        background-color: rgb(255, 255, 255);
+        border-radius: 0.5rem;
+        color: black;
+        text-align: justify;
+        width: 24rem;
+        padding: 1.5rem;
+        margin: auto;
+        margin-top: 1.5rem;
+
+
+        $border-color: rgb(167, 167, 167);
+        $border-radius: 0.3rem;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        h2 {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        input {
+            
+            border-radius: $border-radius;
+            border: solid 0.1rem $border-color;
+            padding: 0.4rem;
+            margin-bottom: 1rem;
+
+            background-color: white;
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 0.8rem;
+            color: rgb(91, 91, 91);
+            margin: 0.25rem;
+            margin-top: -0.125rem;
+        }
+
+        select {
+            margin-bottom: 1rem;
+            border: solid 0.1rem $border-color;
+            border-radius: $border-radius;
+            padding: 0.4rem;
+        }
+
+        button {
+            margin-top: 0rem;
+            background-color: rgb(78, 78, 255);
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 0.8rem;
+            border-radius: 2rem;
+        }
+
+        .identification {
+            display: grid;
+            grid-template-columns: 20% 80%;
+
+            select {
+                margin-right: 0.5rem;
+            }
+
+            input {
+                padding-left: 0.5rem;
+            }
+        }
+
+    }
+
+
+}

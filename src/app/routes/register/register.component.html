@@ -1,0 +1,33 @@
+<div class="background">
+    <button (click)="return()">Regresar</button>
+    <div class="register">
+        <div class="logo">
+            <img src="{{imgUrl}}/Logos/7.png" alt="">
+        </div>
+        <h1>Súmate a una nueva forma de hacer negocios</h1>
+        <div *ngIf="!passwordMatching" class="not-matching-passwords">
+            <h1>Las contraseñas no coinciden!</h1>
+        </div>
+        <form [formGroup] = "registerForm">
+            <h2>Háblanos de ti</h2>
+            <input type="text" placeholder="Nombres" formControlName="firstName">
+            <input type="text" placeholder="Apellidos" formControlName="lastName">
+            <h3>¿De dónde eres?</h3>
+            <select name="pais" id="" (change)="selectedCountry($event)" formControlName="country">
+                <option *ngFor="let country of countries" [value]="country.name">{{country.name}}</option>
+            </select>
+            <div class="identification">
+                <select name="tipo-documento" formControlName="documentType">
+                    <option *ngFor="let document of documentTypes" [value]="document.type">{{document.acronym}}</option>
+                </select>
+                <input type="text" placeholder="Número de documento" formControlName="documentNumber">
+            </div>
+            <h2>Información de sesión</h2>
+            <input type="text" placeholder="Correo electrónico" formControlName="email">
+            <input type="text" placeholder="Nombre de usuario" formControlName="userName">
+            <input type="text" placeholder="Escribe tu contraseña" formControlName="password">
+            <input type="text" placeholder="Confirma la contraseña" formControlName="passwordConfirmation">
+            <button (click)="registerNewUser()">Unirse</button>
+        </form>
+    </div>
+</div>

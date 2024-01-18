@@ -1,0 +1,90 @@
+.posts {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+// Posts
+.post {
+    margin-bottom: 20px;
+  }
+  
+  .post-author-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .post-product-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+    margin-left: 100px;
+  }
+  
+  .post-author-info {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+
+// Sección de comentarios
+.comments-section {
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+  
+    .comment {
+      display: flex;
+      align-items: start; // Alinea los elementos al inicio del contenedor
+      margin-bottom: 10px;
+      
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    
+      .mat-line {
+        display: flex;
+        flex-direction: column; // Hace que los elementos se apilen verticalmente
+        justify-content: space-between; // Distribuye el espacio de manera uniforme entre los elementos
+        width: 100%; // Ocupa todo el espacio disponible
+    
+        h4, p, span {
+          margin: 0; // Elimina los márgenes predeterminados
+        }
+    
+        .comment-date {
+          font-size: 0.8em;
+          color: #999;
+        }
+      }
+    }
+    
+  
+    .add-comment {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+  
+      .comment-input {
+        flex-grow: 1;
+        margin-right: 10px;
+      }
+    }
+  }
+  
+  .text-comments{
+    padding-top: 25px;
+  
+  }
+  
+  .comment-name {
+    font-weight: bold;
+  }

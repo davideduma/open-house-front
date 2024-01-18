@@ -1,0 +1,82 @@
+$width: 1920px;
+$height: 1080px;
+
+
+.login {
+    //background: url("../../../assets/imgs/login/background.png") no-repeat;
+    padding-top: 28vh;
+
+    text-align: center;
+
+    margin: -0.5rem;
+    background-color: rgb(85, 60, 120);
+    padding-bottom: 20%;
+
+    .logo {
+        margin-bottom: 0.4rem;
+        img {
+            width: 26%;
+        }        
+    }
+
+    .warning {
+        background-color: rgb(213, 176, 72);
+        margin: 0 38% 0 38%;
+        padding: 0.2rem;
+        border-radius: 0.8rem;
+        margin-bottom: 0.6rem;
+
+        h1 {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: white;
+        }
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 37% 0 37%;
+
+        input {
+            $padding-value: 0.6rem;
+
+            padding: $padding-value;
+            padding-left: $padding-value*2;
+            margin-bottom: $padding-value;
+            border: none;
+            border-radius: $padding-value*2;
+
+            background-color: rgb(232, 232, 232);
+        }
+
+        textarea:focus, input:focus{
+            outline: none;
+            background-color: white;
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: 65% 35%;
+
+            button {
+                $padding-ref: 0.6rem;
+
+                border: none;
+                background-color: white;
+                padding: $padding-ref 2*$padding-ref $padding-ref 2*$padding-ref;
+                border-radius: 2*$padding-ref;
+                color: rgb(109, 60, 120);
+                font-weight: 200;
+                font-size: 0.9rem;
+            }
+
+            .register {
+                background-color: transparent;
+                color: white;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 2,
+        "user_receiver": "user_1",
+        "user_transmitter": "user_2",
+        "lastMessage": "Cordial saludo",
+        "avatar": "assets/imgs/1.png",
+        "status": "online",
+        "timestamp": "2023-04-01T10:04:00Z",
+        "messages": [
+        
+        ]
+    },
+    {
+        "id": 3,
+        "user_receiver": "user_1",
+        "user_transmitter": "user_3",
+        "lastMessage": "Buena tarde!",
+        "avatar": "assets/imgs/2.png",
+        "status": "offlines",
+        "timestamp": "2023-04-01T10:05:00Z",
+        "messages": [
+            
+        ]
+    }
+]

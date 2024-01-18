@@ -1,0 +1,68 @@
+---
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  VPC:
+    Type: 'AWS::EC2::VPC'
+    Properties:
+      CidrBlock: '10.0.0.0/16'
+
+  InternetGateway:
+    Type: 'AWS::EC2::InternetGateway'
+
+  AttachGateway:
+    Type: 'AWS::EC2::VPCGatewayAttachment'
+    Properties:
+      VpcId: !Ref VPC
+      InternetGatewayId: !Ref InternetGateway
+
+  Subnet:
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      VpcId: !Ref VPC
+      CidrBlock: '10.0.1.0/24'
+
+  SecurityGroup:
+    Type: 'AWS::EC2::SecurityGroup'
+    Properties:
+      GroupDescription: Security Group for EKS cluster
+      VpcId: !Ref VPC
+
+  EKSCluster:
+    Type: 'AWS::EKS::Cluster'
+    Properties:
+      Name: 'angular-application-cluster'
+      Version: '1.21'
+      RoleArn: 'arn:aws:iam::<account_id>:role/EKS-Cluster-Role'
+      ResourcesVpcConfig:
+        SubnetIds:
+          - !Ref Subnet
+        SecurityGroupIds:
+          - !Ref SecurityGroup
+
+  EKSNodeGroup:
+    Type: 'AWS::EKS::Nodegroup'
+    Properties:
+      NodegroupName: 'angular-application-nodegroup'
+      NodeRole: 'arn:aws:iam::<account_id>:role/EKS-Worker-Node-Role'
+      Subnets: 
+        - !Ref Subnet
+      ScalingConfig:
+        DesiredSize: 3
+        MinSize: 3
+        MaxSize: 4
+      DiskSize: 20
+      ClusterName: !Ref EKSCluster
+      AmiType: AL2_x86_64
+
+Outputs:
+  ClusterName:
+    Description: The name of the EKS cluster.
+    Value: !Ref EKSCluster
+    Export:
+      Name: EKSClusterName
+
+  NodeGroupName:
+    Description: The name of the EKS Node Group.
+    Value: !Ref EKSNodeGroup
+    Export:
+      Name: EKSNodeGroupName
