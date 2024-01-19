@@ -1,0 +1,35 @@
+<nav>
+    <div class="logo" routerLink="/home">
+        <img src="{{imgUrl}}Logos/logo.png" alt="">
+    </div>
+    <div class="search">
+        <!--<button></button>-->
+        <input placeholder="Buscar" type="text" [(ngModel)]="searchContent" (keyup.enter)="getUsers($event)">
+    </div>
+    <div class="options">
+        <div class="option" routerLink="/home">
+            <img src="{{imgUrl}}icons/home.png" alt="">
+            <p>Inicio</p>
+        </div>
+        <div class="option" routerLink="/network">
+            <img src="{{imgUrl}}icons/red.png" alt="">
+            <p>Red</p>
+        </div>
+        <div class="option" routerLink="/opportunities">
+            <img src="{{imgUrl}}icons/transaction.png" alt="">
+            <p>Oportunidad</p>
+        </div>
+        <div class="option" routerLink="/messenger">
+            <img src="{{imgUrl}}icons/mensajes.png" alt="">
+            <p>Mensajes</p>
+        </div>
+        <div class="option" (click)="openNotifications()">
+            <img style="width: 1.4rem;" src="{{imgUrl}}icons/bell.png" alt="">
+            <p>Notificaciones</p>
+        </div>
+        <div class="option" id="me">
+            <img src="{{imgUrl}}profile/foto.jfif" alt="">
+            <p>Yo</p>
+        </div>
+    </div>
+</nav>

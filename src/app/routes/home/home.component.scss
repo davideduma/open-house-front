@@ -1,0 +1,44 @@
+.home-style {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .left-sidebar,
+  .right-sidebar {
+    width: 25%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .main-content {
+    width: 50%;
+  }
+  
+  // Left
+  .profile-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  
+  mat-divider {
+    margin: 10px 0;
+  }
+  
+  mat-list-item {
+    cursor: pointer;
+  }
+  
+  mat-list-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  // Right Sidebar
+  .view-all-notifications {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  
+  

@@ -1,0 +1,47 @@
+[
+    {
+       "title":"Conferencia de telas 2023",
+       "date":"15 de junio de 2023",
+       "image":"assets/event1.jpg"
+    },
+    {
+       "title":"Taller de innovacion moda",
+       "date":"20 de junio de 2023",
+       "image":"assets/event2.jpg"
+    },
+    {
+       "title":"Meetup de diseñadores",
+       "date":"25 de junio de 2023",
+       "image":"assets/event3.jpg"
+    },
+   {
+      "title":"Conferencia de telas 2024",
+      "date":"15 de junio de 2024",
+      "image":"assets/event1.jpg"
+   },
+   {
+      "title":"Taller de innovacion moda",
+      "date":"20 de junio de 2024",
+      "image":"assets/event2.jpg"
+   },
+   {
+      "title":"Meetup de diseñadores",
+      "date":"25 de junio de 2024",
+      "image":"assets/event3.jpg"
+   },
+   {
+      "title":"Conferencia de telas 2025",
+      "date":"15 de junio de 2025",
+      "image":"assets/event1.jpg"
+   },
+   {
+      "title":"Taller de innovacion moda",
+      "date":"20 de junio de 2025",
+      "image":"assets/event2.jpg"
+   },
+   {
+      "title":"Meetup de diseñadores",
+      "date":"25 de junio de 2025",
+      "image":"assets/event3.jpg"
+   }
+ ]

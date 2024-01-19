@@ -1,0 +1,23 @@
+<div class="login">
+    <div class="logo">
+        <img src="../../../assets/imgs/Logos/7.png" alt="">
+    </div>
+    <div *ngIf="invalidData" class="warning invalid-response">
+        <h1>Usuario o contraseña incorrecta</h1>
+    </div>
+    <div *ngIf="incompleteData" class="warning incomplete-info">
+        <h1>¡Información incompleta!</h1>
+    </div>
+    <form [formGroup]="formData">
+        <input type="text" 
+            placeholder="Email o nombre de usuario"
+            formControlName="userName">
+        <input type="password" 
+            placeholder="Contraseña"
+            formControlName="password">
+        <div class="options">
+            <button class="register" (click)="register()">Registro</button>
+            <button (click)="signIn()">Login</button>
+        </div>
+    </form>
+</div>

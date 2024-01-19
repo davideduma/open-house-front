@@ -1,0 +1,62 @@
+[
+    {
+       "text":"Juan Pérez le ha dado me gusta a tu publicación.",
+       "date":"Hace 2 horas",
+       "image":"assets/notification1.jpg"
+    },
+    {
+       "text":"María González ha comentado en tu publicación.",
+       "date":"Hace 4 horas",
+       "image":"assets/notification2.jpg"
+    },
+    {
+       "text":"Nueva inversion disponible en tu área.",
+       "date":"Hace 8 horas",
+       "image":"assets/notification3.jpg"
+    },
+   {
+      "text":"Juan Pérez le ha dado me gusta a tu publicación.",
+      "date":"Hace 2 horas",
+      "image":"assets/notification1.jpg"
+   },
+   {
+      "text":"María González ha comentado en tu publicación.",
+      "date":"Hace 4 horas",
+      "image":"assets/notification2.jpg"
+   },
+   {
+      "text":"Nueva inversion disponible en tu área.",
+      "date":"Hace 8 horas",
+      "image":"assets/notification3.jpg"
+   },
+   {
+      "text":"Juan Pérez le ha dado me gusta a tu publicación.",
+      "date":"Hace 2 horas",
+      "image":"assets/notification1.jpg"
+   },
+   {
+      "text":"María González ha comentado en tu publicación.",
+      "date":"Hace 4 horas",
+      "image":"assets/notification2.jpg"
+   },
+   {
+      "text":"Nueva inversion disponible en tu área.",
+      "date":"Hace 8 horas",
+      "image":"assets/notification3.jpg"
+   },
+   {
+      "text":"Juan Pérez le ha dado me gusta a tu publicación.",
+      "date":"Hace 2 horas",
+      "image":"assets/notification1.jpg"
+   },
+   {
+      "text":"María González ha comentado en tu publicación.",
+      "date":"Hace 4 horas",
+      "image":"assets/notification2.jpg"
+   },
+   {
+      "text":"Nueva inversion disponible en tu área.",
+      "date":"Hace 8 horas",
+      "image":"assets/notification3.jpg"
+   }
+ ]

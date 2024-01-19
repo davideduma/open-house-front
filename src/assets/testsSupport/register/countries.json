@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Colombia",
+        "documentTypes": [
+            { "type": "cedula", "acronym": "C.C." },
+            { "type": "foreigner", "acronym": "C.E." }
+        ]
+    },
+    {
+        "name": "Argentina",
+        "documentTypes": [
+            { "type": "cedula-identidad", "acronym": "C.I." }
+        ]
+    }
+]

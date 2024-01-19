@@ -1,0 +1,12 @@
+{
+    "userId": 1,
+    "userName": "john_doe",
+    "password": "",
+    "securityToken": "bB01",
+    "firstName": "John",
+    "lastName": "Doe",
+    "country": "Colombia",
+    "documentType": "cedula",
+    "documentNumber": "10986352",
+    "email": "joh_doe@email.com"
+}

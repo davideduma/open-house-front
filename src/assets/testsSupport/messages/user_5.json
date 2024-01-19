@@ -1,0 +1,14 @@
+[
+    {
+        "id": 7,
+        "user_receiver": "user_5",
+        "user_transmitter": "user_7",
+        "lastMessage": "hola como estas?",
+        "avatar": "assets/imgs/1.png",
+        "status": "online",
+        "timestamp": "2023-04-01T10:04:00Z",
+        "messages": [
+        
+        ]
+    }
+]

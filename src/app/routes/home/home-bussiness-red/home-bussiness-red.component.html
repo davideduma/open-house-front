@@ -1,0 +1,15 @@
+
+<div class="network">
+    <h2>Mi red</h2>
+    <mat-list>
+      <mat-list-item *ngFor="let connection of connections">
+        <img mat-list-avatar [src]="connection.image" alt="Foto de perfil">
+        <h4 mat-line>{{ connection.name }}</h4>
+        <p mat-line>{{ connection.title }}</p>
+        <button mat-icon-button>
+          <mat-icon>message</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-list>
+    <button (click)="showAllConnections()" mat-raised-button color="primary" class="view-all-connections">Ver todas las conexiones</button>
+</div>

@@ -1,0 +1,16 @@
+{
+    "_userId": 123,
+    "_userName": "john_doe",
+    "_password": "Pass123!",
+    "_securityToken": "AbCdEfGh12345",
+    "_photo": "https://example.com/photo.jpg",
+  
+    "userId": 123,
+    "userName": "john_doe",
+    "password": "Pass123!",
+    "securityToken": "AbCdEfGh12345",
+    "photo": "https://example.com/photo.jpg",
+  
+    "isValid": true
+  }
+  
