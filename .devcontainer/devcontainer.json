@@ -1,0 +1,28 @@
+{
+  "name": "Angular Dev with Codespaces",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "latest"
+    }
+  },
+  "forwardPorts": [4200],
+  "postCreateCommand": "npm i",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+          }
+        },
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "Angular.ng-template",
+        "redhat.vscode-yaml"
+      ]
+    }
+  }
+}
