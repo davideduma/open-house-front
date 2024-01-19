@@ -7,7 +7,7 @@
     }
   },
   "forwardPorts": [4200],
-  "postCreateCommand": ["npm i", "ng serve"],
+  "postCreateCommand": "npm i",
   "customizations": {
     "vscode": {
       "settings": {
