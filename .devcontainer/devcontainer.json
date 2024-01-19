@@ -1,17 +1,27 @@
 {
   "name": "Angular Dev with Codespaces",
-  "image": "mcr.microsoft.com/devcontainers/universal:1",
-  "features": {
-    "ghcr.io/cirolosapio/devcontainers-features/alpine-node:0": {
-      "corepack": true,
-      "pnpmVersion": "latest",
-      "globalPackages": "@angular/cli@15.1.2 @angular-devkit/architect@0.1501.2 @angular-devkit/build-angular@15.1.2 @angular-devkit/core@15.1.2 @angular-devkit/schematics@15.1.2 schematics/angular@15.1.2"
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "latest"
     }
   },
+  "forwardPorts": [4200],
+  "postCreateCommand": "npm i",
   "customizations": {
     "vscode": {
+      "settings": {
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+          }
+        },
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
       "extensions": [
-        "Angular.ng-template"
+        "Angular.ng-template",
+        "redhat.vscode-yaml"
       ]
     }
   }
