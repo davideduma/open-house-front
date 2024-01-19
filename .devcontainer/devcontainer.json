@@ -1,4 +1,5 @@
 {
+  "name": "Angular Dev with Codespaces",
   "image": "mcr.microsoft.com/devcontainers/universal:1",
   "features": {
     "ghcr.io/cirolosapio/devcontainers-features/alpine-node:0": {
