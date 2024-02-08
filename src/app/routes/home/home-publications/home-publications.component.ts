@@ -14,30 +14,27 @@ import { HomeContentService } from 'src/app/core/services/home-content.service';
 export class HomePublicationsComponent implements OnInit{
   
   public posts: HomeContentPost[] = [];
-
   @Input()
   public user: string = "";
-
   public newComment: { [key: string]: string } = {};
+  public newCommentChanged: { [key: string]: string } = {};
   
   constructor(private homeContentService: HomeContentService,
-    private datePipe: DatePipe){
+              private datePipe: DatePipe)
+  {
+
   }
 
   ngOnInit(): void {
-    //set user with local storage
-    //this.user = localStorage.getItem('userName') || "";
-    
     this.loadPosts();
   }
  
+  /**
+   * Funcion para cargar las publicaciones del usuario logeado
+   */
   loadPosts() {
     this.homeContentService.getPosts(this.user).subscribe((response: HomeContentPost[]) => {
-      console.log("response posts", response);
-      
       this.posts = response;
-
-      console.log("posts", this.posts)
     },
     (error) => {
       console.error('Error', error);
@@ -45,6 +42,11 @@ export class HomePublicationsComponent implements OnInit{
     );
   }
 
+  /**
+   * Funcion para dar me gusta a una publicacion determinada
+   * @param id Representa el ID de la publicacion
+   * @param index Representa la posicion de la publicacion de las de mas publicaciones
+   */
   doLike(id: string, index: number){
 
     this.homeContentService.doLike(id).subscribe({
@@ -59,13 +61,12 @@ export class HomePublicationsComponent implements OnInit{
 
   }
 
+  /**
+   * Funcion para adicionar un comentario en una publicidad determinada.
+   * @param id Representa el ID de la publicacion
+   * @param index Representa la posicion de la publicacion de las de mas publicaciones
+   */
   addComment(id: String, index: number){
-
-    //print all arguments the function receives
-    console.log("id", id);
-    console.log("newComment", this.newComment);
-    console.log("index", index);
-    console.log("user publications", this.user);
 
     if(this.newComment[index] != "" && this.newComment[index] != undefined){
       let singleComment: CommentPeople = {
@@ -82,7 +83,7 @@ export class HomePublicationsComponent implements OnInit{
           if(response.resultState){
             this.posts[index].commentPeople.push(singleComment);
 
-            //clean input
+            // Limpia entrada
             this.newComment[index] = "";
           }
         },
