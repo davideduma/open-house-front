@@ -17,6 +17,7 @@ export class HomePublicationsComponent implements OnInit{
   @Input()
   public user: string = "";
   public newComment: { [key: string]: string } = {};
+  public newCommentChanged: { [key: string]: string } = {};
   
   constructor(private homeContentService: HomeContentService,
               private datePipe: DatePipe)

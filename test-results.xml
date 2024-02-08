@@ -1,24 +1,155 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome 121.0.0.0 (Windows 10)" package="" timestamp="2024-02-08T20:37:36" id="0" hostname="DESKTOP-BGHAS87" tests="16" errors="0" failures="0" time="0.148">
+<testsuite name="Chrome 121.0.0.0 (Windows 10)" package="" timestamp="2024-02-08T21:02:34" id="0" hostname="DESKTOP-BGHAS87" tests="16" errors="0" failures="11" time="0.314">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"/>
   </properties>
-  <testcase name="HomePublicationsComponent el botón con ID &quot;2&quot; debe estar siempre dentro de &lt;div class=&quot;text-comments&quot;>" time="0.055" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent el botón con ID &quot;2&quot; debe estar siempre dentro de &lt;div class=&quot;text-comments&quot;> y tener color=&quot;primary&quot;" time="0.007" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent cada publicación debe tener una imagen de usuario" time="0.007" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent Debe existir un boton por publicacion con id = 2 cuyo label en pantalla sea comentario" time="0.007" classname="HomePublicationsComponent"/>
+  <testcase name="HomePublicationsComponent el botón con ID &quot;2&quot; debe tener el atributo color establecido en &quot;primary&quot;" time="0.187" classname="HomePublicationsComponent">
+    <failure type="">TypeError: Cannot read properties of null (reading 'nativeElement')
+    at UserContext.&lt;anonymous&gt; (src/app/routes/home/home-publications/home-publications.component.spec.ts:114:27)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:1)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:1)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:582:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/fesm2015/zone-testing.js:597:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HomePublicationsComponent debe existir una sección de comentarios en cada publicación" time="0.011" classname="HomePublicationsComponent"/>
+  <testcase name="HomePublicationsComponent debe existir un input para añadir comentarios en cada publicación" time="0.01" classname="HomePublicationsComponent"/>
+  <testcase name="HomePublicationsComponent Debe existir un boton por publicacion con id = 2 cuyo label en pantalla sea comentario" time="0.008" classname="HomePublicationsComponent">
+    <failure type="">TypeError: Cannot read properties of null (reading 'nativeElement')
+    at UserContext.&lt;anonymous&gt; (src/app/routes/home/home-publications/home-publications.component.spec.ts:40:27)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:1)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:1)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:582:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/fesm2015/zone-testing.js:597:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HomePublicationsComponent debe mostrar el nombre del usuario en la publicación" time="0.008" classname="HomePublicationsComponent"/>
+  <testcase name="HomePublicationsComponent Debe existir un boton por publicacion con id = 1 cuyo label en pantalla sea mensaje" time="0.009" classname="HomePublicationsComponent">
+    <failure type="">TypeError: Cannot read properties of null (reading 'nativeElement')
+    at UserContext.&lt;anonymous&gt; (src/app/routes/home/home-publications/home-publications.component.spec.ts:35:27)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:1)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:1)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:582:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/fesm2015/zone-testing.js:597:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HomePublicationsComponent debe haber un botón &quot;Me gusta&quot; en cada publicación" time="0.009" classname="HomePublicationsComponent">
+    <failure type="">Error: Expected false to be true.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/app/routes/home/home-publications/home-publications.component.spec.ts:103:95)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+  </testcase>
+  <testcase name="HomePublicationsComponent el botón con ID &quot;1&quot; debe contener el texto &quot;Mensaje&quot;" time="0.008" classname="HomePublicationsComponent">
+    <failure type="">TypeError: Cannot read properties of null (reading 'nativeElement')
+    at UserContext.&lt;anonymous&gt; (src/app/routes/home/home-publications/home-publications.component.spec.ts:108:27)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:1)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:1)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:582:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/fesm2015/zone-testing.js:597:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HomePublicationsComponent el botón con ID &quot;1&quot; debe estar siempre dentro de &lt;mat-card-actions>" time="0.01" classname="HomePublicationsComponent">
+    <failure type="">Error: Expected null to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/app/routes/home/home-publications/home-publications.component.spec.ts:48:27)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+    <failure type="">TypeError: Cannot read properties of null (reading 'nativeElement')
+    at UserContext.&lt;anonymous&gt; (src/app/routes/home/home-publications/home-publications.component.spec.ts:50:64)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:1)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:1)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:582:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/fesm2015/zone-testing.js:597:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HomePublicationsComponent debe existir al menos un mat-card para las publicaciones" time="0.008" classname="HomePublicationsComponent"/>
+  <testcase name="HomePublicationsComponent cada publicación debe tener una imagen de usuario" time="0.009" classname="HomePublicationsComponent">
+    <failure type="">Error: Expected 0 to be greater than 0.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/app/routes/home/home-publications/home-publications.component.spec.ts:91:31)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+  </testcase>
+  <testcase name="HomePublicationsComponent el botón con ID &quot;2&quot; debe estar siempre dentro de &lt;div class=&quot;text-comments&quot;> y tener color=&quot;primary&quot;" time="0.009" classname="HomePublicationsComponent">
+    <failure type="">Error: Expected null to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/app/routes/home/home-publications/home-publications.component.spec.ts:64:27)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+    <failure type="">TypeError: Cannot read properties of null (reading 'attributes')
+    at UserContext.&lt;anonymous&gt; (src/app/routes/home/home-publications/home-publications.component.spec.ts:65:26)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:1)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:1)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:582:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/fesm2015/zone-testing.js:597:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HomePublicationsComponent el botón con ID &quot;2&quot; debe estar siempre dentro de &lt;div class=&quot;text-comments&quot;>" time="0.008" classname="HomePublicationsComponent">
+    <failure type="">Error: Expected null to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/app/routes/home/home-publications/home-publications.component.spec.ts:57:27)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+    <failure type="">TypeError: Cannot read properties of null (reading 'nativeElement')
+    at UserContext.&lt;anonymous&gt; (src/app/routes/home/home-publications/home-publications.component.spec.ts:59:65)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:1)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:1)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:582:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/fesm2015/zone-testing.js:597:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HomePublicationsComponent El boton con ID &quot;2&quot; deben llamar a addComment al hacer clic" time="0.008" classname="HomePublicationsComponent">
+    <failure type="">TypeError: Cannot read properties of null (reading 'nativeElement')
+    at UserContext.&lt;anonymous&gt; (src/app/routes/home/home-publications/home-publications.component.spec.ts:77:21)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:1)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:1)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:582:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/fesm2015/zone-testing.js:597:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="HomePublicationsComponent El boton con ID &quot;1&quot; deben llamar a addComment al hacer clic" time="0.006" classname="HomePublicationsComponent">
+    <failure type="">TypeError: Cannot read properties of null (reading 'nativeElement')
+    at UserContext.&lt;anonymous&gt; (src/app/routes/home/home-publications/home-publications.component.spec.ts:70:21)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:1)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:1)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:582:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/fesm2015/zone-testing.js:597:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
   <testcase name="HomePublicationsComponent should create" time="0.006" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent debe existir una sección de comentarios en cada publicación" time="0.006" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent debe existir un input para añadir comentarios en cada publicación" time="0.005" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent Debe existir un boton por publicacion con id = 1 cuyo label en pantalla sea mensaje" time="0.005" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent el botón con ID &quot;1&quot; debe contener el texto &quot;Mensaje&quot;" time="0.007" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent el botón con ID &quot;2&quot; debe tener el atributo color establecido en &quot;primary&quot;" time="0.006" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent debe mostrar el nombre del usuario en la publicación" time="0.006" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent debe haber un botón &quot;Me gusta&quot; en cada publicación" time="0.007" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent debe existir al menos un mat-card para las publicaciones" time="0.005" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent el botón con ID &quot;1&quot; debe estar siempre dentro de &lt;mat-card-actions>" time="0.007" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent El boton con ID &quot;2&quot; deben llamar a addComment al hacer clic" time="0.006" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent El boton con ID &quot;1&quot; deben llamar a addComment al hacer clic" time="0.006" classname="HomePublicationsComponent"/>
   <system-out>
     <![CDATA[Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
 1. If 'mat-card' is an Angular component, then verify that it is part of this module.
@@ -35,18 +166,12 @@
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
 1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
 2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list' is not a known element:
 1. If 'mat-list' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element:
 1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
 2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
-1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
-2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
@@ -64,18 +189,12 @@
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
 1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
 2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list' is not a known element:
 1. If 'mat-list' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element:
 1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
 2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
-1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
-2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
@@ -93,18 +212,12 @@
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
 1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
 2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list' is not a known element:
 1. If 'mat-list' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element:
 1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
 2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
-1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
-2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
@@ -122,18 +235,12 @@
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
 1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
 2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list' is not a known element:
 1. If 'mat-list' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element:
 1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
 2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
-1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
-2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
@@ -151,18 +258,12 @@
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
 1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
 2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list' is not a known element:
 1. If 'mat-list' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element:
 1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
 2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
-1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
-2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
@@ -180,18 +281,12 @@
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
 1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
 2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list' is not a known element:
 1. If 'mat-list' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element:
 1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
 2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
-1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
-2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
@@ -209,18 +304,12 @@
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
 1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
 2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list' is not a known element:
 1. If 'mat-list' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element:
 1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
 2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
-1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
-2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
@@ -238,18 +327,12 @@
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
 1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
 2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list' is not a known element:
 1. If 'mat-list' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element:
 1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
 2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
-1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
-2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
@@ -267,18 +350,12 @@
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
 1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
 2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list' is not a known element:
 1. If 'mat-list' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element:
 1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
 2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
-1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
-2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
@@ -296,18 +373,12 @@
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
 1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
 2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list' is not a known element:
 1. If 'mat-list' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element:
 1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
 2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
-1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
-2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
@@ -325,18 +396,12 @@
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
 1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
 2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list' is not a known element:
 1. If 'mat-list' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element:
 1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
 2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
-1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
-2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
@@ -354,18 +419,12 @@
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
 1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
 2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list' is not a known element:
 1. If 'mat-list' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element:
 1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
 2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
-1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
-2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
@@ -383,18 +442,12 @@
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
 1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
 2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list' is not a known element:
 1. If 'mat-list' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element:
 1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
 2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
-1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
-2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
@@ -412,18 +465,12 @@
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
 1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
 2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list' is not a known element:
 1. If 'mat-list' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element:
 1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
 2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
-1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
-2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
@@ -441,18 +488,12 @@
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
 1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
 2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list' is not a known element:
 1. If 'mat-list' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element:
 1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
 2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
-1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
-2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
@@ -470,18 +511,12 @@
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
 1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
 2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list' is not a known element:
 1. If 'mat-list' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element:
 1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
 2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
-1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
-2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 
