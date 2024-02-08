@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { HomePublicationsComponent } from './home-publications.component';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { DatePipe } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { By } from '@angular/platform-browser';
 
 describe('HomePublicationsComponent', () => {
   let component: HomePublicationsComponent;
@@ -10,14 +10,18 @@ describe('HomePublicationsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        HttpClientTestingModule
+      declarations: [
+        HomePublicationsComponent
       ],
-      declarations: [ HomePublicationsComponent ],
-      providers: [DatePipe]
+      imports: [
+        HttpClientModule
+      ],
+      providers: [
+        DatePipe
+      ]
     })
     .compileComponents();
-
+    
     fixture = TestBed.createComponent(HomePublicationsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -27,17 +31,100 @@ describe('HomePublicationsComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  // it('should display the list of posts', () => {
-  //   component.posts = [
-  //     { id: '1', imgUserPost: 'path/to/image1.jpg', userPost: 'User 1', ownerMural: 'Owner 1', resume: 'Resume 1', imgPost: 'path/to/image1.jpg', comment: 'Comment 1', likes: 1, commentPeople: [] },
-  //     { id: '2', imgUserPost: 'path/to/image2.jpg', userPost: 'User 2', ownerMural: 'Owner 2', resume: 'Resume 2', imgPost: 'path/to/image2.jpg', comment: 'Comment 2', likes: 2, commentPeople: [] }
-  //   ];
-  //   fixture.detectChanges();
-  //   const compiled = fixture.nativeElement;
-  //   const postComments = compiled.querySelectorAll('.main-content .posts .post p');
-  //   expect(postComments[0].textContent).toContain('Resume 1');
-  //   expect(postComments[1].textContent).toContain('Comment 1');
-  // });
+  it('Debe existir un boton por publicacion con id = 1 cuyo label en pantalla sea mensaje', () => {
+    const commentButton = fixture.debugElement.query(By.css('button[id="1"]')).nativeElement;
+    expect(commentButton.textContent).toEqual('Mensaje');
+  });
 
+  it('Debe existir un boton por publicacion con id = 2 cuyo label en pantalla sea comentario', () => {
+    const commentButton = fixture.debugElement.query(By.css('button[id="2"]')).nativeElement;
+    expect(commentButton.textContent).toEqual('Comentario');
+  });
+
+  it('el botón con ID "1" debe estar siempre dentro de <mat-card-actions>', () => {
+    const matCardActions = fixture.debugElement.query(By.css('mat-card-actions'));
+    const commentButton = fixture.debugElement.query(By.css('mat-card-actions button[id="1"]'));
+
+    expect(commentButton).toBeTruthy();
+    expect(matCardActions).toBeTruthy();
+    expect(matCardActions.nativeElement.contains(commentButton.nativeElement)).toBeTrue();
+  });
+
+  it('el botón con ID "2" debe estar siempre dentro de <div class="text-comments">', () => {
+    const textCommentsDiv = fixture.debugElement.query(By.css('div.text-comments'));
+    const commentButton = fixture.debugElement.query(By.css('div.text-comments button[id="2"]'));
+
+    expect(commentButton).toBeTruthy();
+    expect(textCommentsDiv).toBeTruthy();
+    expect(textCommentsDiv.nativeElement.contains(commentButton.nativeElement)).toBeTrue();
+  });
+
+  it('el botón con ID "2" debe estar siempre dentro de <div class="text-comments"> y tener color="primary"', () => {
+    const commentButton = fixture.debugElement.query(By.css('div.text-comments button[id="2"]'));
+    expect(commentButton).toBeTruthy();
+    expect(commentButton.attributes['color']).toEqual('primary');
+  });
+
+  it('El boton con ID "1" deben llamar a addComment al hacer clic', () => {
+    spyOn(component, 'addComment');
+    const button1 = fixture.debugElement.query(By.css('button[id="1"]')).nativeElement;
+    button1.click();
+    expect(component.addComment).toHaveBeenCalled();
+  });
+
+  it('El boton con ID "2" deben llamar a addComment al hacer clic', () => {
+    spyOn(component, 'addComment');
+    const button1 = fixture.debugElement.query(By.css('button[id="2"]')).nativeElement;
+    button1.click();
+    expect(component.addComment).toHaveBeenCalled();
+  });
   
+  it('debe existir al menos un mat-card para las publicaciones', () => {
+  fixture.detectChanges();
+  const postsElements = fixture.debugElement.queryAll(By.css('mat-card.post'));
+  expect(postsElements.length).toBeGreaterThan(0);
+  });
+
+  it('cada publicación debe tener una imagen de usuario', () => {
+    fixture.detectChanges();
+    const userImages = fixture.debugElement.queryAll(By.css('mat-card.post mat-card-header img.post-author-image'));
+    expect(userImages.length).toBeGreaterThan(0);
+  });
+  
+  it('debe mostrar el nombre del usuario en la publicación', () => {
+    fixture.detectChanges();
+    const userName = fixture.debugElement.query(By.css('mat-card.post mat-card-header .post-author-info h3'));
+    expect(userName).toBeTruthy();
+  });
+
+  it('debe haber un botón "Me gusta" en cada publicación', () => {
+    fixture.detectChanges();
+    const likeButtons = fixture.debugElement.queryAll(By.css('mat-card.post mat-card-actions button'));
+    expect(likeButtons.some(button => button.nativeElement.textContent.includes('Me gusta'))).toBeTrue();
+  });
+
+  it('el botón con ID "1" debe contener el texto "Mensaje"', () => {
+    fixture.detectChanges();
+    const messageButton = fixture.debugElement.query(By.css('button[id="1"]')).nativeElement;
+    expect(messageButton.textContent).toContain('Mensaje');
+  });
+
+  it('el botón con ID "2" debe tener el atributo color establecido en "primary"', () => {
+    fixture.detectChanges();
+    const messageButton = fixture.debugElement.query(By.css('button[id="2"]')).nativeElement;
+    expect(messageButton.getAttribute('color')).toEqual('primary');
+  });
+
+  it('debe existir una sección de comentarios en cada publicación', () => {
+    fixture.detectChanges();
+    const commentsSection = fixture.debugElement.queryAll(By.css('mat-card.post .comments-section'));
+    expect(commentsSection.length).toBeGreaterThan(0);
+  });
+
+  it('debe existir un input para añadir comentarios en cada publicación', () => {
+    fixture.detectChanges();
+    const commentInputs = fixture.debugElement.queryAll(By.css('mat-card.post .text-comments .comment-input textarea'));
+    expect(commentInputs.length).toBeGreaterThan(0);
+  });
+            
 });
