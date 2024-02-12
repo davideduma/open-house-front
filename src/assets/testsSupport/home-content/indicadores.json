@@ -1,0 +1,20 @@
+{
+    "indicators": [
+      {
+        "name": "Inflación",
+        "value": "5.4%",
+        "description": "Tasa anual"
+      },
+      {
+        "name": "PIB",
+        "value": "3.2%",
+        "description": "Crecimiento anual"
+      },
+      {
+        "name": "Desempleo",
+        "value": "7.1%",
+        "description": "Tasa nacional"
+      }
+    ]
+  }
+  

@@ -30,6 +30,8 @@ import { HomePublicationsComponent } from './routes/home/home-publications/home-
 import { HomeEconomicefficiencyComponent } from './routes/home/home-economicefficiency/home-economicefficiency.component';
 import { HomeEconomicsIndicatorsComponent } from './routes/home/home-economics-indicators/home-economics-indicators.component';
 import { HomeBussinessRedComponent } from './routes/home/home-bussiness-red/home-bussiness-red.component';
+import { PersonalInfoComponent } from './routes/home/personal-info/personal-info.component';
+import { QuickAccessComponent } from './routes/home/quick-access/quick-access.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +46,8 @@ import { HomeBussinessRedComponent } from './routes/home/home-bussiness-red/home
     HomeEconomicefficiencyComponent,
     HomeEconomicsIndicatorsComponent,
     HomeBussinessRedComponent,
+    PersonalInfoComponent,
+    QuickAccessComponent
   ],
   imports: [
     BrowserModule,
