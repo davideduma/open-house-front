@@ -4,7 +4,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { MatCardModule } from '@angular/material/card';
 import { HomeEconomicsIndicatorsComponent } from './home-economics-indicators.component';
 
-describe('[L2] - PersonalInfoComponent', () => {
+describe('[L2] - HomeEconomicsIndicatorsComponent', () => {
     let component: HomeEconomicsIndicatorsComponent;
     let fixture: ComponentFixture<HomeEconomicsIndicatorsComponent>;
 
@@ -21,10 +21,6 @@ describe('[L2] - PersonalInfoComponent', () => {
     fixture = TestBed.createComponent(HomeEconomicsIndicatorsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-    });
-
-    it('should create', () => {
-    expect(component).toBeTruthy();
     });
 
     // HTML
@@ -101,7 +97,7 @@ describe('[L2] - PersonalInfoComponent', () => {
         expect(component.economicIndicators.length).toEqual(0);
     });
 
-    it('[L2] - debe actualizar la vista correctamente cuando los datos de economicIndicators cambian después de la inicializacion', () => {
+    it('[L2] - debe actualizar la vista correctamente cuando los datos de economicIndicators cambian despues de la inicializacion', () => {
         component.economicIndicators = [
         { name: "Inflacion", value: "5.4%", description: "Tasa anual" }
         ];

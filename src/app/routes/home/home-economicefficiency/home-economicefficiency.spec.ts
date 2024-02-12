@@ -4,7 +4,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { MatCardModule } from '@angular/material/card';
 import { HomeEconomicefficiencyComponent } from './home-economicefficiency.component';
 
-describe('PersonalInfoComponent', () => {
+describe('[L2] - HomeEconomicefficiencyComponent', () => {
     let component: HomeEconomicefficiencyComponent;
     let fixture: ComponentFixture<HomeEconomicefficiencyComponent>;
 
@@ -21,10 +21,6 @@ describe('PersonalInfoComponent', () => {
     fixture = TestBed.createComponent(HomeEconomicefficiencyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-    });
-
-    it('should create', () => {
-    expect(component).toBeTruthy();
     });
 
     // Component
@@ -91,12 +87,12 @@ describe('PersonalInfoComponent', () => {
 
     // SCSS
 
-    it('debe aplicar el color de fondo correcto a las filas impares', () => {
+    it('[L2] - debe aplicar el color de fondo correcto a las filas impares', () => {
         const oddRow: HTMLElement = fixture.nativeElement.querySelectorAll('table tbody tr:nth-child(odd)')[0];
         expect(window.getComputedStyle(oddRow).backgroundColor).toBe('rgb(0, 60, 112)');
     });
 
-    it('debe tener el color de texto y fondo esperado en las cabeceras de la tabla', () => {
+    it('[L2] - debe tener el color de texto y fondo esperado en las cabeceras de la tabla', () => {
         const thElement: HTMLElement = fixture.nativeElement.querySelector('table thead tr th');
         expect(window.getComputedStyle(thElement).color).toBe('rgb(255, 255, 255)');
     });

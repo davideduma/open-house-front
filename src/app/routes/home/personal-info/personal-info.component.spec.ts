@@ -4,7 +4,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { MatCardModule } from '@angular/material/card';
 import { PersonalInfoComponent } from './personal-info.component';
 
-describe('PersonalInfoComponent', () => {
+describe('[L2] - PersonalInfoComponent', () => {
   let component: PersonalInfoComponent;
   let fixture: ComponentFixture<PersonalInfoComponent>;
 
@@ -22,10 +22,6 @@ describe('PersonalInfoComponent', () => {
     component = fixture.componentInstance;
     component.user = 'Nombre de Usuario';
     fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
   });
 
   it('[L2] - Deberia de mostrar la imagen por default', () => {

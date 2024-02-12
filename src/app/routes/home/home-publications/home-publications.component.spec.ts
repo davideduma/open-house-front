@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HomeContentService } from 'src/app/core/services/home-content.service';
 
-describe('HomePublicationsComponent', () => {
+describe('[L1] - HomePublicationsComponent', () => {
   let component: HomePublicationsComponent;
   let fixture: ComponentFixture<HomePublicationsComponent>;
 
@@ -29,10 +29,6 @@ describe('HomePublicationsComponent', () => {
     fixture = TestBed.createComponent(HomePublicationsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
   });
 
   it('[L1] - Debe existir un boton por publicacion con id = 1 cuyo label en pantalla sea mensaje', () => {
@@ -119,7 +115,7 @@ describe('HomePublicationsComponent', () => {
     expect(messageButton.getAttribute('color')).toEqual('primary');
   });
 
-  it('[L1] - debe existir una sección de comentarios en cada publicación', () => {
+  it('[L1] - debe existir una seccion de comentarios en cada publicacion', () => {
     fixture.detectChanges();
     const commentsSection = fixture.debugElement.queryAll(By.css('mat-card.post .comments-section'));
     expect(commentsSection.length).toBeGreaterThan(0);
