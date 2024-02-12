@@ -1,61 +1,68 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome 121.0.0.0 (Windows 10)" package="" timestamp="2024-02-12T13:00:47" id="0" hostname="DESKTOP-BGHAS87" tests="23" errors="0" failures="0" time="0.146">
+<testsuite name="Chrome 121.0.0.0 (Windows 10)" package="" timestamp="2024-02-12T15:18:20" id="0" hostname="DESKTOP-BGHAS87" tests="36" errors="0" failures="0" time="0.165">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"/>
   </properties>
-  <testcase name="HomePublicationsComponent [L1] - debe existir al menos un mat-card para las publicaciones" time="0.029" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent [L1] - El boton con ID &quot;2&quot; deben llamar a addComment al hacer clic" time="0.007" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent [L1] - el botón con ID &quot;2&quot; debe tener el atributo color establecido en &quot;primary&quot;" time="0.005" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent [L1] - debe existir una sección de comentarios en cada publicación" time="0.006" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent [L1] - el botón con ID &quot;2&quot; debe estar siempre dentro de &lt;div class=&quot;text-comments&quot;>" time="0.007" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent [L1] - debe existir un input para añadir comentarios en cada publicación" time="0.006" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent [L1] - el botón con ID &quot;1&quot; debe estar siempre dentro de &lt;mat-card-actions>" time="0.007" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent [L1] - debe mostrar el nombre del usuario en la publicación" time="0.006" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent [L1] - cada publicación debe tener una imagen de usuario" time="0.006" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent [L1] - debe haber un botón &quot;Me gusta&quot; en cada publicación" time="0.006" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent [L1] - El boton con ID &quot;1&quot; deben llamar a addComment al hacer clic" time="0.006" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent [L1] - el botón con ID &quot;1&quot; debe contener el texto &quot;Mensaje&quot;" time="0.006" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent [L1] - el botón con ID &quot;2&quot; debe estar siempre dentro de &lt;div class=&quot;text-comments&quot;> y tener color=&quot;primary&quot;" time="0.006" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent should create" time="0.006" classname="HomePublicationsComponent"/>
-  <testcase name="HomePublicationsComponent [L1] - Debe existir un boton por publicacion con id = 2 cuyo label en pantalla sea comentario" time="0.005" classname="HomePublicationsComponent"/>
+  <testcase name="QuickAccessComponent should create" time="0.007" classname="QuickAccessComponent"/>
+  <testcase name="PersonalInfoComponent [L2] - Deberia usar un ALT para definir la descripcion de la imagen como &quot;Foto de perfil&quot;" time="0.009" classname="PersonalInfoComponent"/>
+  <testcase name="PersonalInfoComponent [L2] - Deberia tener la correcta card class" time="0.004" classname="PersonalInfoComponent"/>
+  <testcase name="PersonalInfoComponent [L2] - Deberia de mostrar la imagen por default" time="0.002" classname="PersonalInfoComponent"/>
+  <testcase name="PersonalInfoComponent should create" time="0.001" classname="PersonalInfoComponent"/>
+  <testcase name="PersonalInfoComponent [L2] - Deberia de tener un link a user profile" time="0.002" classname="PersonalInfoComponent"/>
+  <testcase name="PersonalInfoComponent [L2] - Debe de usar un mat-card-content, su contenido debe ser &quot;StartUp de venta de telas&quot;" time="0.001" classname="PersonalInfoComponent"/>
+  <testcase name="PersonalInfoComponent debe aplicar el color de fondo correcto a las filas impares" time="0.006" classname="PersonalInfoComponent"/>
+  <testcase name="PersonalInfoComponent [L2] - debe mostrar todos los datos cuando se selecciona la opcion por defecto" time="0.003" classname="PersonalInfoComponent"/>
+  <testcase name="PersonalInfoComponent debe tener el color de texto y fondo esperado en las cabeceras de la tabla" time="0.002" classname="PersonalInfoComponent"/>
+  <testcase name="PersonalInfoComponent [L2] - debe renderizar todas las filas iniciales en la tabla" time="0.002" classname="PersonalInfoComponent"/>
+  <testcase name="PersonalInfoComponent [L2] - debe existir un selector de año" time="0.002" classname="PersonalInfoComponent"/>
+  <testcase name="PersonalInfoComponent [L2] - debe mostrar solo los datos del año seleccionado" time="0.004" classname="PersonalInfoComponent"/>
+  <testcase name="PersonalInfoComponent should create" time="0.002" classname="PersonalInfoComponent"/>
+  <testcase name="PersonalInfoComponent [L2] - debe mostrar todos los datos cuando no se selecciona un año" time="0.002" classname="PersonalInfoComponent"/>
+  <testcase name="PersonalInfoComponent [L2] - debe inicializar correctamente los arrays anios y aniosFiltrados" time="0.002" classname="PersonalInfoComponent"/>
+  <testcase name="PersonalInfoComponent [L2] - debe actualizar aniosFiltrados cuando cambia la seleccion" time="0.001" classname="PersonalInfoComponent"/>
+  <testcase name="PersonalInfoComponent [L2] - debe tener el numero correcto de opciones de año" time="0.002" classname="PersonalInfoComponent"/>
+  <testcase name="PersonalInfoComponent [L2] - debe filtrar correctamente por un año especifico" time="0.002" classname="PersonalInfoComponent"/>
+  <testcase name="PersonalInfoComponent [L2] - debe mantener la integridad de los datos despues de aplicar un filtro" time="0.001" classname="PersonalInfoComponent"/>
+  <testcase name="HomePublicationsComponent [L1] - debe existir una sección de comentarios en cada publicación" time="0.011" classname="HomePublicationsComponent"/>
+  <testcase name="HomePublicationsComponent [L1] - debe existir un input para añadir comentarios en cada publicación" time="0.008" classname="HomePublicationsComponent"/>
   <testcase name="HomePublicationsComponent [L1] - Debe existir un boton por publicacion con id = 1 cuyo label en pantalla sea mensaje" time="0.005" classname="HomePublicationsComponent"/>
-  <testcase name="PersonalInfoComponent [L2] - Debe de usar un mat-card-content, su contenido debe ser &quot;StartUp de venta de telas&quot;" time="0.008" classname="PersonalInfoComponent"/>
-  <testcase name="PersonalInfoComponent should create" time="0.003" classname="PersonalInfoComponent"/>
-  <testcase name="PersonalInfoComponent [L2] - Deberia de mostrar la imagen por default" time="0.003" classname="PersonalInfoComponent"/>
-  <testcase name="PersonalInfoComponent [L2] - Deberia de tener un link a user profile" time="0.004" classname="PersonalInfoComponent"/>
-  <testcase name="PersonalInfoComponent [L2] - Deberia tener la correcta card class" time="0.003" classname="PersonalInfoComponent"/>
-  <testcase name="PersonalInfoComponent [L2] - Deberia usar un ALT para definir la descripcion de la imagen como &quot;Foto de perfil&quot;" time="0.003" classname="PersonalInfoComponent"/>
-  <testcase name="QuickAccessComponent should create" time="0.003" classname="QuickAccessComponent"/>
+  <testcase name="HomePublicationsComponent [L1] - El boton con ID &quot;1&quot; deben llamar a addComment al hacer clic" time="0.005" classname="HomePublicationsComponent"/>
+  <testcase name="HomePublicationsComponent [L1] - Debe existir un boton por publicacion con id = 2 cuyo label en pantalla sea comentario" time="0.007" classname="HomePublicationsComponent"/>
+  <testcase name="HomePublicationsComponent [L1] - el botón con ID &quot;2&quot; debe estar siempre dentro de &lt;div class=&quot;text-comments&quot;> y tener color=&quot;primary&quot;" time="0.006" classname="HomePublicationsComponent"/>
+  <testcase name="HomePublicationsComponent should create" time="0.005" classname="HomePublicationsComponent"/>
+  <testcase name="HomePublicationsComponent [L1] - el botón con ID &quot;1&quot; debe estar siempre dentro de &lt;mat-card-actions>" time="0.008" classname="HomePublicationsComponent"/>
+  <testcase name="HomePublicationsComponent [L1] - el botón con ID &quot;2&quot; debe estar siempre dentro de &lt;div class=&quot;text-comments&quot;>" time="0.008" classname="HomePublicationsComponent"/>
+  <testcase name="HomePublicationsComponent [L1] - El boton con ID &quot;2&quot; deben llamar a addComment al hacer clic" time="0.008" classname="HomePublicationsComponent"/>
+  <testcase name="HomePublicationsComponent [L1] - debe existir al menos un mat-card para las publicaciones" time="0.007" classname="HomePublicationsComponent"/>
+  <testcase name="HomePublicationsComponent [L1] - cada publicación debe tener una imagen de usuario" time="0.006" classname="HomePublicationsComponent"/>
+  <testcase name="HomePublicationsComponent [L1] - debe mostrar el nombre del usuario en la publicación" time="0.006" classname="HomePublicationsComponent"/>
+  <testcase name="HomePublicationsComponent [L1] - debe haber un botón &quot;Me gusta&quot; en cada publicación" time="0.006" classname="HomePublicationsComponent"/>
+  <testcase name="HomePublicationsComponent [L1] - el botón con ID &quot;1&quot; debe contener el texto &quot;Mensaje&quot;" time="0.006" classname="HomePublicationsComponent"/>
+  <testcase name="HomePublicationsComponent [L1] - el botón con ID &quot;2&quot; debe tener el atributo color establecido en &quot;primary&quot;" time="0.006" classname="HomePublicationsComponent"/>
   <system-out>
-    <![CDATA[Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
-1. If 'mat-card' is an Angular component, then verify that it is part of this module.
-2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-header' is not a known element:
-1. If 'mat-card-header' is an Angular component, then verify that it is part of this module.
-2. If 'mat-card-header' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-title' is not a known element:
-1. If 'mat-card-title' is an Angular component, then verify that it is part of this module.
-2. If 'mat-card-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element:
-1. If 'mat-card-content' is an Angular component, then verify that it is part of this module.
-2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
-1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
-2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+    <![CDATA[Chrome 121.0.0.0 (Windows 10) ERROR
+  Disconnected Client disconnected from CONNECTED state (transport close)
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list' is not a known element:
 1. If 'mat-list' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element:
-1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
-2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
 1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
+,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
+1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
+1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
+2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
+1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
+1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
+2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
+1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
 1. If 'mat-card' is an Angular component, then verify that it is part of this module.
 2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
@@ -491,27 +498,35 @@
 2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
+,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
+1. If 'mat-card' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-header' is not a known element:
+1. If 'mat-card-header' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-header' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-title' is not a known element:
+1. If 'mat-card-title' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element:
+1. If 'mat-card-content' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
+1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
+1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list' is not a known element:
 1. If 'mat-list' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-form-field' is not a known element:
+1. If 'mat-form-field' is an Angular component, then verify that it is part of this module.
+2. If 'mat-form-field' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
 1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
 2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
-1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
-2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-list-item' is not a known element:
-1. If 'mat-list-item' is an Angular component, then verify that it is part of this module.
-2. If 'mat-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
-1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
-2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
+,Chrome 121.0.0.0 (Windows 10) ERROR: 'NG0303: Can't bind to 'ngModel' since it isn't a known property of 'textarea'.'
 
 ]]>
   </system-out>
