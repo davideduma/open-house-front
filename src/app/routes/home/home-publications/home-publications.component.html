@@ -1,42 +1,58 @@
 <div class="posts">
+
+  <!-- Seccion donde se generan todos las publicaciones en base a la variable "post" de manera automatica-->
   <mat-card class="post" *ngFor="let post of posts; let i = index">
+      <!-- Encabezado de la publicacion -->
       <mat-card-header>
         <mat-card-title>
-          <img [src]="post.imgUserPost" alt="Imagen de usuario modificada" class="post-author-image-changed">
+          <img [src]="post.imgUserPost" alt="Foto de perfil" class="post-author-image">
           <div class="post-author-info">
-            <h3>{{post.userPost}} Modificado</h3>
+            <h3>{{post.userPost}}</h3>
             <p>{{post.resume}}</p>
           </div>
         </mat-card-title>
       </mat-card-header>
 
-      <img mat-card-image [src]=post.imgPost alt="Imagen modificada" class="post-product-image">
+      <!-- Imagen de la publicacion -->
+      <img mat-card-image [src]=post.imgPost alt="Imagen de la publicación" class="post-product-image">
       <mat-card-content>
         <p>{{post.comment}}</p>
       </mat-card-content>
 
-      <button mat-button id="3" (click)="doLike(post.id, i)">Gustar</button>
-      <button mat-button id="4" (click)="addComment(post.id, i)">Texto diferente</button>
-
+      <!-- Acciones de la publicacion -->
       <mat-card-actions>
-        
+        <button mat-button (click)="doLike(post.id, i)">
+          <mat-icon>thumb_up</mat-icon>
+          Me gusta ({{post.likes}})
+        </button>
+        <button mat-button id="1" (click)="addComment(post.id, i)">Mensaje</button>
       </mat-card-actions>
 
+      <!-- Sección de comentarios -->
       <div class="comments-section">
         <h3>Comentarios ({{post.commentPeople.length}})</h3>
-        <mat-list>
-		
-        </mat-list>
 
-        <button mat-button id="5" color="secondary" (click)="addComment(post.id, i)">Otro comentario</button>
+        <mat-list>
+          <mat-list-item class="comment" *ngFor="let comment of post.commentPeople">
+            <img mat-list-avatar [src]="comment.imgUserComment" alt="Foto de perfil">
+            <div class="mat-line">
+              <h4 class="comment-name">{{comment.name}}</h4>
+              <p>{{comment.comment}}</p>
+              <span class="comment-date">{{comment.timeComment | date:'short'}}</span>
+            </div>
+          </mat-list-item>
+        </mat-list>
 
         <div class="text-comments">
           <div class="add-comment">
             <mat-form-field class="comment-input">
-              <textarea matInput placeholder="Texto modificado..." [(ngModel)]="newCommentChanged[i.toString()]"></textarea>
+              <textarea matInput placeholder="Añade un comentario..." [(ngModel)]="newComment[i.toString()]"></textarea>
             </mat-form-field>
           </div>
+          <button mat-button id="2" color="primary" (click)="addComment(post.id, i)">Comentario</button>
         </div>
+
       </div>  
   </mat-card>
+
 </div>
