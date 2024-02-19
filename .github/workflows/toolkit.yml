@@ -1,0 +1,18 @@
+name: Toolkit InnerSource-OpenSource
+on: workflow_dispatch
+jobs:
+  build-repo:
+    runs-on: ubuntu-latest
+    name: Download tools and templates Innersource-Opensource
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+      - id: testToolkit
+        uses: bancolombia/opensource-innersource-toolkit@main
+        with:
+          GH_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+          TYPE_REPOSITORY: 'opensource'
+          USERS_REVIEWERS: '@davideduma @jdarguello @dhfherna @glhl86'
+          TEMPLATE_LANGUAGE: 'ES'
