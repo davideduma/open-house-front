@@ -24,25 +24,6 @@ Objetivo, solucionar issues por prueba unitaria y adicionalmente debe quedar seg
 
 ![image](https://github.com/jdarguello/open-house-front/assets/86481341/6dbac117-117c-4fb0-9b59-25149440acaa)
 
-## Issues nivel uno (L1)
-
-✅ https://github.com/jdarguello/open-house-front/issues/4
-✅ https://github.com/jdarguello/open-house-front/issues/5
-✅ https://github.com/jdarguello/open-house-front/issues/6
-✅ https://github.com/jdarguello/open-house-front/issues/7
-✅ https://github.com/jdarguello/open-house-front/issues/8
-✅ https://github.com/jdarguello/open-house-front/issues/9
-✅ https://github.com/jdarguello/open-house-front/issues/10
-✅ https://github.com/jdarguello/open-house-front/issues/11
-✅ https://github.com/jdarguello/open-house-front/issues/12
-✅ https://github.com/jdarguello/open-house-front/issues/13
-✅ https://github.com/jdarguello/open-house-front/issues/14
-✅ https://github.com/jdarguello/open-house-front/issues/15
-✅ https://github.com/jdarguello/open-house-front/issues/16
-✅ https://github.com/jdarguello/open-house-front/issues/17
-✅ https://github.com/jdarguello/open-house-front/issues/18
-
-
 ## Datos de liderazgo
 * Dhavian fernando
 * Guillermo Hollos
@@ -50,7 +31,7 @@ Objetivo, solucionar issues por prueba unitaria y adicionalmente debe quedar seg
 * David Marquez
 
 ## Keywords (palabras claves del proyecto)
-Esto con fines de facilidad de busqueda desde las herramientas organizacionales
+Open Source, Open House, Evento, Angular, Contribucion.
 
 ## Documentos principales
 
@@ -58,8 +39,3 @@ Esto con fines de facilidad de busqueda desde las herramientas organizacionales
 * Guía de Adecuar ambiente local [Guia para Iniciar](GETTINGSTARTED.md).
 * Modelo de gobierno [Modelo de Gobierno](GOVERNANCE.md)
 * Codigo de conducta [code-of-conduct.md](CODE-OF-CONDUCT.md)
-
-## Canal de comunicaciones
-En el siguiente enlace (enlace al canal) podrá suscribirse a nuestro canal para estar al tanto de las nuevas características adicionadas.
-## Repositorios relacionados
-Si existen repositorios relacionados se pondrá una breve descripción y un enlace a los mismos
