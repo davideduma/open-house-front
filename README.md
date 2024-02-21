@@ -5,8 +5,8 @@ Objetivo, solucionar issues por prueba unitaria y adicionalmente debe quedar seg
 
 ## Estimacion de tiempos por ISSUE:
 
-30 min por cada issue nivel facil. Cantidad total issue nivel facil: 15
-45 minutos por cada issues nivel medio. Cantidad total issue nivel facil: 25
+- 30 min por cada issue nivel facil. Cantidad total issue nivel facil: 15
+- 45 minutos por cada issues nivel medio. Cantidad total issue nivel facil: 25
 
 - Total tiempo para issue nivel facil: 7 Horas y 30 minutos
 - Total tiempo para issue nivel medio: 2 Dias
