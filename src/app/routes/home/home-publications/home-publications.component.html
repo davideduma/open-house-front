@@ -1,6 +1,6 @@
 <div class="posts">
-  <mat-card class="post" *ngFor="let post of posts; let i = index">
-      <mat-card-header>
+  <div class="post" *ngFor="let post of posts; let i = index">
+      <div>
         <mat-card-title>
           <img [src]="post.imgUserPost" alt="Imagen de usuario modificada" class="post-author-image-changed">
           <div class="post-author-info">
@@ -8,19 +8,16 @@
             <p>{{post.resume}}</p>
           </div>
         </mat-card-title>
-      </mat-card-header>
+      </div>
 
       <img mat-card-image [src]=post.imgPost alt="Imagen modificada" class="post-product-image">
-      <mat-card-content>
+      <div>
         <p>{{post.comment}}</p>
-      </mat-card-content>
+      <div>
 
-      <button mat-button id="3" (click)="doLike(post.id, i)">Gustar</button>
-      <button mat-button id="4" (click)="addComment(post.id, i)">Texto diferente</button>
-
-      <mat-card-actions>
+      <div>
         
-      </mat-card-actions>
+      <div>
 
       <div class="comments-section">
         <h3>Comentarios ({{post.commentPeople.length}})</h3>
@@ -38,5 +35,5 @@
           </div>
         </div>
       </div>  
-  </mat-card>
+  </div>
 </div>

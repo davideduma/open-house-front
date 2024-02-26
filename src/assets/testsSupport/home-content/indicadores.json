@@ -2,17 +2,17 @@
     "indicators": [
       {
         "name": "Inflación",
-        "value": "5.4%",
+        "value": "2.4%",
         "description": "Tasa anual"
       },
       {
         "name": "PIB",
-        "value": "3.2%",
+        "value": "7.2%",
         "description": "Crecimiento anual"
       },
       {
         "name": "Desempleo",
-        "value": "7.1%",
+        "value": "9.1%",
         "description": "Tasa nacional"
       }
     ]
