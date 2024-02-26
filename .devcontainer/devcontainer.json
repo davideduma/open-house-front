@@ -20,6 +20,8 @@
         "terminal.integrated.defaultProfile.linux": "bash"
       },
       "extensions": [
+        "GitHub.copilot",
+				"GitHub.copilot-chat",
         "Angular.ng-template",
         "redhat.vscode-yaml"
       ]
