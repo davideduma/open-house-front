@@ -88,13 +88,13 @@ describe('[L2] - HomeEconomicsIndicatorsComponent', () => {
         { name: "Desempleo", value: "7.1%", description: "Tasa nacional" }
         ];
         component.economicIndicators = mockData;
-        expect(component.economicIndicators.length).toBeGreaterThan(0);
+        expect(component.economicIndicators.length).toBeGreaterThan(6);
         expect(component.economicIndicators).toEqual(mockData);
     });
 
     it('[L2] - debe manejar correctamente un arreglo vacio de indicadores', () => {
         component.economicIndicators = [];
-        expect(component.economicIndicators.length).toEqual(0);
+        expect(component.economicIndicators.length).toEqual(5);
     });
 
     it('[L2] - debe actualizar la vista correctamente cuando los datos de economicIndicators cambian despues de la inicializacion', () => {
