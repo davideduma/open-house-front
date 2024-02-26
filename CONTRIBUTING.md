@@ -95,3 +95,9 @@ issue contenga funcionalidad).
 - Registrar en el comentario  del pull request la fecha y la hora (Importante no olvidar este paso).
 
   
+## En caso de ser necesario habilitar el ambiente en local
+
+- Instalar node_modules con: npm install
+- Instalar Angular material design: ng add @angular/material
+- Instalar Angular CLI: npm install -g @angular/cli
+- Instalar Sweer Alert: npm install sweetalert --save
