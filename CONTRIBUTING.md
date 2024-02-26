@@ -2,6 +2,13 @@
 
 Importante: Leer completamente esta guia y con mucha atencion.
 
+## Conocimientos necesarios
+
+- HTML
+- SCSS o css
+- TypeScript
+- Material Design
+
 El evento competitivo de modalidad carrera, consiste 4 factores.
 
 - Factor tiempo: El que solucione los issues en el menor tiempo posible. Se estima un tiempo maximo de 2 dias para solucionar todos los issues.
@@ -83,6 +90,8 @@ NOTA 3: Detallar en comentarios del pull request
 - El issue que se esta solucionando
 - una imagen del resultado obtenido
 - imagen de la prueba unitaria con resultado correcto
-- Imagenes que prueben la correcta funcionalidad (Solo en caso de que el issue contenga funcionalidad).
+- Imagenes que prueben la correcta funcionalidad (Solo en caso de que el 
+issue contenga funcionalidad).
+- Registrar en el comentario  del pull request la fecha y la hora (Importante no olvidar este paso).
 
   
