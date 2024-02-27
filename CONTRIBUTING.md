@@ -93,7 +93,7 @@ NOTA 3: Detallar en comentarios del pull request
 - Imagenes que prueben la correcta funcionalidad (Solo en caso de que el 
 issue contenga funcionalidad).
 - Registrar en el comentario  del pull request la fecha y la hora (Importante no olvidar este paso).
-
+- Previamente en el issue debe especificar este comentario "/asignarme" para asignarse el issue.
   
 ## En caso de ser necesario habilitar el ambiente en local
 
