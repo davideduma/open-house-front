@@ -13,12 +13,14 @@
       <img mat-card-image [src]=post.imgPost alt="Imagen modificada" class="post-product-image">
       <div>
         <p>{{post.comment}}</p>
-      <div>
+      </div>
 
-      <div  class="comments-section-buttons">
-        <button class="button-message" id="1">Mensaje</button>
-      <div>
-
+      <mat-card-actions>
+        <div  class="comments-section-buttons">
+          <button class="button-message" id="1">Mensaje</button>
+        </div>  
+      </mat-card-actions>
+      
       <div class="comments-section">
         <h3>Comentarios ({{post.commentPeople.length}})</h3>
         <mat-list>
