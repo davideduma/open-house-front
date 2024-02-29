@@ -1,5 +1,5 @@
 <div class="posts">
-  <div class="post" *ngFor="let post of posts; let i = index">
+  <mat-card class="post" *ngFor="let post of posts; let i = index">
       <div>
         <mat-card-title>
           <img [src]="post.imgUserPost" alt="Imagen de usuario modificada" class="post-author-image-changed">
@@ -36,5 +36,5 @@
           <button mat-button class="comment-button" id="2" color="primary" (click)="addComment(post.id, i)">Comentario</button>
         </div>
       </div>  
-  </div>
+  </mat-card>
 </div>
